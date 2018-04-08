@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Curriculum Vitae JDB - Educación </title>
+  </head>
+  <body>
+
+    <img src="images/logo.svg" alt="Logo JDB">
+    <h1>Curriculum Vitae</h1>
+    <h2>Datos Personales</h2>
+    <h3>Nombre y apellido: Julián Della Bruna</h3>
+    <h3>Fecha y lugar de nacimiento: 26 jul 1975. General Pinto, Buenos Aires, Argentina</h3>
+
+    <nav title="Menu">
+      <ul>
+        <li><a title="Inicio" href="index.html">Inicio</a></li>
+        <li><a title="Educacion" href="#">Educación</a></li>
+        <li><a title="Experiencia" href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+
+    <h2>Educación</h2>
+    <table border="1">
+      <tr>
+        <th>Año</th><th>Institución</th><th>Lugar</th><th>Culminó?</th>
+      </tr>
+      <tr>
+        <td>2005-2009</td><td>Analista programador</td><td>U.N.P.S.J.B</td><td>Sí</td>
+      </tr>
+      <tr>
+        <td>1989-1993</td><td>Bachiller</td><td>Esc. Nacional General Pinto</td><td>Sí</td>
+      </tr>
+    </table>
+    <br>
+    <form name="formEducacion" autocomplete="on">
+      <fieldset>
+          <legend>Agregar Estudios</legend>
+            <label for="anio">Año:</label>
+            <select id="anio" required>
+               <option>2018</option>
+               <option>2017</option>
+               <option>2016</option>
+               <option>2015</option>
+               <option>2014</option>
+               <option>2013</option>
+               <option>2012</option>
+            </select>
+            <br>
+            <label for="institucion">Institución:</label>
+            <input type="text" id="institucion" required>
+            <br>
+            <label for="lugar">Lugar:</label>
+            <textarea id="lugar" rows="4" cols="50"></textarea>
+            <br>
+            <label for="culmino">Culminó?</label>
+            <input type="radio" name="culmino" id="culmino" value="Si"> Sí
+            <input type="radio" name="culmino" value="No"> No
+            <br>
+            <input type="submit" id="enviar" value="Enviar">
+      </fieldset>
+    </form>
+
+    <footer>
+        <p>Teléfono: <strong>11 33590369</strong></p>
+        <p>email: <a href="mailto:jdellabruna@gmail.com">jdellabruna@gmail.com</a></p>
+        <p>Twitter: <a href="https://twitter.com/jdellabruna"><img width="35px" src="images/twitter_logo.svg" alt="Logo Twitter"></a></p>
+    </footer>
+  </body>
+</html>
